@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa hàng — Nội Ngoại Thất Hiệu Hải Phát</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="logo" href="index.html">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</a>
+        <nav class="nav-main" aria-label="Menu chính">
+          <a href="index.html">Trang chủ</a>
+          <a href="list_products.html?cat=son">Sơn nước</a>
+          <a href="list_products.html?cat=vesinh">Thiết bị vệ sinh</a>
+          <a href="list_products.html?cat=gach">Gạch men</a>
+          <a href="list_products.html" class="is-active">Cửa hàng</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>Cửa hàng sản phẩm</h1>
+        <p>Gạch men — Sơn nước — Thiết bị vệ sinh</p>
+      </div>
+    </div>
+
+    <div class="container layout-shop">
+      <aside class="filter-box" aria-label="Lọc danh mục">
+        <h2>Danh mục</h2>
+        <a href="list_products.html" data-filter="all">Tất cả</a>
+        <a href="list_products.html?cat=gach" data-filter="gach">Gạch men</a>
+        <a href="list_products.html?cat=son" data-filter="son">Sơn nước</a>
+        <a href="list_products.html?cat=vesinh" data-filter="vesinh"
+          >Thiết bị vệ sinh</a
+        >
+      </aside>
+
+      <div>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-category="gach">
+            <div class="img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=600&q=80"
+                alt="Gạch vân đá marble"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="info">
+              <span class="tag">Gạch men</span>
+              <h3>Gạch lát nền vân đá Marble 60×60</h3>
+              <p class="price">285.000đ / m²</p>
+              <a
+                class="btn btn-primary btn-block"
+                href="product_detail.html?id=gm01"
+                >Xem chi tiết</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="gach">
+            <div class="img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=600&q=80"
+                alt="Gạch ốp tường"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="info">
+              <span class="tag">Gạch men</span>
+              <h3>Gạch ốp tường men bóng 30×60</h3>
+              <p class="price">195.000đ / m²</p>
+              <a
+                class="btn btn-primary btn-block"
+                href="product_detail.html?id=gm02"
+                >Xem chi tiết</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="son">
+            <div class="img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1589939705389-0e8f2a6e0a2b?w=600&q=80"
+                alt="Sơn nội thất"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="info">
+              <span class="tag">Sơn nước</span>
+              <h3>Sơn nội thất mịn — thùng 18L</h3>
+              <p class="price">1.890.000đ</p>
+              <a
+                class="btn btn-primary btn-block"
+                href="product_detail.html?id=sn01"
+                >Xem chi tiết</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="son">
+            <div class="img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80"
+                alt="Sơn ngoại thất"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="info">
+              <span class="tag">Sơn nước</span>
+              <h3>Sơn ngoại thất chống thấm — 15L</h3>
+              <p class="price">2.150.000đ</p>
+              <a
+                class="btn btn-primary btn-block"
+                href="product_detail.html?id=sn02"
+                >Xem chi tiết</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vesinh">
+            <div class="img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80"
+                alt="Sen tắm"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="info">
+              <span class="tag">Thiết bị vệ sinh</span>
+              <h3>Bộ sen tắm nhiệt độ — inox 304</h3>
+              <p class="price">4.290.000đ</p>
+              <a
+                class="btn btn-primary btn-block"
+                href="product_detail.html?id=tb01"
+                >Xem chi tiết</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vesinh">
+            <div class="img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80"
+                alt="Lavabo"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="info">
+              <span class="tag">Thiết bị vệ sinh</span>
+              <h3>Lavabo đặt bàn sứ — 55cm</h3>
+              <p class="price">2.650.000đ</p>
+              <a
+                class="btn btn-primary btn-block"
+                href="product_detail.html?id=tb02"
+                >Xem chi tiết</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <p class="footer-brand">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</p>
+          <p>Đồng hành cùng không gian sống của gia đình bạn.</p>
+          <p><strong>Điện thoại:</strong> 033 123 4567</p>
+          <p><strong>Địa chỉ:</strong> Lê Lợi, Hải Phòng</p>
+          <p>
+            <strong>Website:</strong>
+            <a href="index.html">noithathaiphong.vn</a>
+          </p>
+          <div class="social" aria-label="Mạng xã hội">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Zalo">Zalo</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <p class="footer-brand">Danh mục</p>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="list_products.html?cat=son">Sơn nước</a></li>
+            <li><a href="list_products.html?cat=vesinh">Thiết bị vệ sinh</a></li>
+            <li><a href="list_products.html?cat=gach">Gạch men</a></li>
+            <li><a href="index.html#lien-he">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-brand">Liên hệ</p>
+          <p><strong>Email:</strong> info@noithathaiphong.vn</p>
+          <p><a href="list_products.html">Xem sản phẩm tại cửa hàng</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          © 2026 Nội Ngoại Thất Hiệu Hải Phát. Bảo lưu mọi quyền.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var cat = params.get("cat");
+        var cards = document.querySelectorAll(".product-card");
+        var links = document.querySelectorAll(".filter-box a");
+
+        var valid = { gach: true, son: true, vesinh: true };
+        if (cat && !valid[cat]) cat = null;
+
+        function applyFilter(c) {
+          var showAll = !c;
+          cards.forEach(function (card) {
+            var ok = showAll || card.dataset.category === c;
+            card.classList.toggle("is-hidden", !ok);
+          });
+          links.forEach(function (a) {
+            var f = a.getAttribute("data-filter");
+            var active = showAll ? f === "all" : f === c;
+            a.classList.toggle("is-active", active);
+          });
+        }
+
+        applyFilter(cat);
+      })();
+    </script>
+  </body>
+</html>
