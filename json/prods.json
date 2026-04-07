@@ -141,6 +141,42 @@
       "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
       "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
       "image": "assets/list_prods/boncau8.jpg"
+    },
+    {
+      "id": "sn01",
+      "category": "son",
+      "title": "Sơn Nội Thất Bóng",
+      "price": "Liên hệ",
+      "desc": "Sơn nội thất bóng cao cấp đem lại bề mặt nhẵn mịn.",
+      "specs": ["Dòng: Sơn nội thất"],
+      "image": "assets/list_prods/sonnuoc1.jpg"
+    },
+    {
+      "id": "sn02",
+      "category": "son",
+      "title": "Sơn Ngoại Thất Cao Cấp",
+      "price": "Liên hệ",
+      "desc": "Sơn ngoại thất bảo vệ tối ưu trước thời tiết khắc nghiệt.",
+      "specs": ["Dòng: Sơn ngoại thất"],
+      "image": "assets/list_prods/sonnuoc2.jpg"
+    },
+    {
+      "id": "sn03",
+      "category": "son",
+      "title": "Sơn Nước Kháng Khuẩn",
+      "price": "Liên hệ",
+      "desc": "Sơn nước kháng khuẩn thân thiện với môi trường.",
+      "specs": ["Dòng: Sơn kháng khuẩn"],
+      "image": "assets/list_prods/sonnuoc3.jpg"
+    },
+    {
+      "id": "sn04",
+      "category": "son",
+      "title": "Sơn Lót Kháng Kiềm",
+      "price": "Liên hệ",
+      "desc": "Sơn lót kháng kiềm chống nấm mốc hiệu quả.",
+      "specs": ["Dòng: Sơn lót"],
+      "image": "assets/list_prods/sonnuoc4.jpg"
     }
   ]
 }

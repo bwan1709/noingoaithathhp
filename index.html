@@ -38,6 +38,7 @@
       <nav class="nav-main" aria-label="Menu chính">
         <a href="index.html" class="is-active">Trang chủ</a>
         <a href="list_products.html?cat=gach">Gạch men</a>
+        <a href="list_products.html?cat=son">Sơn nước</a>
         <a href="list_products.html?cat=vesinh">Thiết bị vệ sinh</a>
         <a href="list_products.html">Cửa hàng</a>
       </nav>
@@ -169,8 +170,32 @@
       </p>
     </div>
   </section>
+  <section class="alt" id="san-pham-son-nuoc" aria-labelledby="home-son-heading">
+    <div class="container">
+      <div class="animate-slide-up" data-animate>
+        <h2 id="home-son-heading" class="section-title">SẢN PHẨM SƠN NƯỚC</h2>
+        <div class="section-separator">
+          <svg viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6C8 6 6 1.5 3 1.5C1 1.5 1 4.5 3 4.5C5 4.5 7 10.5 11 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <path d="M21 6C24 6 26 1.5 29 1.5C31 1.5 31 4.5 29 4.5C27 4.5 25 10.5 21 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <rect x="14" y="4" width="4" height="4" transform="rotate(45 16 6)" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+      <p id="home-son-status" class="section-lead" style="margin-top: 0">
+        Đang tải…
+      </p>
+      <div class="product-grid" id="home-son-grid"></div>
+      <nav class="pager pager--after-grid" id="home-son-pager" aria-label="Phân trang sơn nước"></nav>
+      <p class="home-more animate-slide-up" data-animate>
+        <a href="list_products.html?cat=son">Xem tất cả sơn nước</a>
+      </p>
+    </div>
+  </section>
 
-  <section class="alt" id="san-pham-thiet-bi-vesinh" aria-labelledby="home-vesinh-heading">
+  <section id="san-pham-thiet-bi-vesinh" aria-labelledby="home-vesinh-heading">
     <div class="container">
       <div class="animate-slide-up" data-animate>
         <h2 id="home-vesinh-heading" class="section-title">THIẾT BỊ VỆ SINH</h2>
@@ -298,10 +323,14 @@
       var gridGach = document.getElementById("home-product-grid");
       var stGach = document.getElementById("home-product-status");
       var pagerGach = document.getElementById("home-gach-pager-bottom");
+      var gridSon = document.getElementById("home-son-grid");
+      var stSon = document.getElementById("home-son-status");
+      var pagerSon = document.getElementById("home-son-pager");
       var gridVe = document.getElementById("home-vesinh-grid");
       var stVe = document.getElementById("home-vesinh-status");
       var pagerVe = document.getElementById("home-vesinh-pager");
       var gachCatalog = [];
+      var sonCatalog = [];
       var vesinhCatalog = [];
 
       function pathBase() {
@@ -328,6 +357,14 @@
       function getGachPage() {
         var n = parseInt(
           new URLSearchParams(window.location.search).get("page"),
+          10
+        );
+        return n >= 1 ? n : 1;
+      }
+
+      function getSonPage() {
+        var n = parseInt(
+          new URLSearchParams(window.location.search).get("spage"),
           10
         );
         return n >= 1 ? n : 1;
@@ -444,8 +481,35 @@
         mountPager(pagerVe, page, totalPages, "vpage");
       }
 
+      function renderSon() {
+        if (!gridSon) return;
+        var raw = getSonPage();
+        var totalPages = Math.max(
+          1,
+          Math.ceil(sonCatalog.length / PER_PAGE)
+        );
+        var page = raw > totalPages ? totalPages : raw;
+        if (page < 1) page = 1;
+        if (sonCatalog.length && raw !== page) {
+          replaceParam("spage", page);
+        }
+        var start = (page - 1) * PER_PAGE;
+        var slice = sonCatalog.slice(start, start + PER_PAGE);
+        gridSon.innerHTML = "";
+        slice.forEach(function (p, index) {
+          let card = NTShop.buildProductCard(p);
+          card.classList.add("animate-slide-up");
+          card.setAttribute("data-animate", "");
+          card.style.transitionDelay = (100 * index) + "ms";
+          observer.observe(card);
+          gridSon.appendChild(card);
+        });
+        mountPager(pagerSon, page, totalPages, "spage");
+      }
+
       function refreshHomeLists() {
         renderGach();
+        renderSon();
         renderVesinh();
       }
 
@@ -457,6 +521,9 @@
           gachCatalog = all.filter(function (p) {
             return p.category === "gach";
           });
+          sonCatalog = all.filter(function (p) {
+            return p.category === "son";
+          });
           vesinhCatalog = all.filter(function (p) {
             return p.category === "vesinh";
           });
@@ -464,6 +531,11 @@
             if (!gachCatalog.length)
               stGach.textContent = "Chưa có sản phẩm gạch men.";
             else stGach.remove();
+          }
+          if (stSon) {
+            if (!sonCatalog.length)
+              stSon.textContent = "Chưa có sản phẩm sơn nước.";
+            else stSon.remove();
           }
           if (stVe) {
             if (!vesinhCatalog.length)
@@ -477,6 +549,7 @@
             stGach.textContent =
               "Không tải được json/prods.json (cần mở site qua máy chủ tĩnh).";
           }
+          if (stSon) stSon.textContent = stGach ? stGach.textContent : "";
           if (stVe) stVe.textContent = stGach ? stGach.textContent : "";
         });
     })();
