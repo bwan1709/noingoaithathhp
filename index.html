@@ -1,228 +1,405 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nội Ngoại Thất Hiệu Hải Phát — Gạch men, Sơn, Thiết bị vệ sinh</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container inner">
-        <a class="logo" href="index.html">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</a>
-        <nav class="nav-main" aria-label="Menu chính">
-          <a href="index.html" class="is-active">Trang chủ</a>
-          <a href="list_products.html?cat=son">Sơn nước</a>
-          <a href="list_products.html?cat=vesinh">Thiết bị vệ sinh</a>
-          <a href="list_products.html?cat=gach">Gạch men</a>
-          <a href="list_products.html">Cửa hàng</a>
-        </nav>
-      </div>
-    </header>
 
-    <section class="hero" aria-label="Banner chính">
-      <div class="hero-inner">
-        <h1>KHÔNG GIAN SỐNG TRỌN VẸN</h1>
-        <p class="sub">
-          — Gạch men, Sơn nước &amp; Thiết bị vệ sinh cao cấp
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nội Ngoại Thất Hiệu Hải Phát — Gạch men, Sơn, Thiết bị vệ sinh</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container inner">
+      <a class="logo" href="index.html">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-main" aria-label="Menu chính">
+        <a href="index.html" class="is-active">Trang chủ</a>
+        <a href="list_products.html?cat=gach">Gạch men</a>
+        <a href="list_products.html?cat=vesinh">Thiết bị vệ sinh</a>
+        <a href="list_products.html">Cửa hàng</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Banner chính">
+    <div class="hero-slides" aria-hidden="true">
+      <img class="hero-slide is-active" src="assets/boicanhch.jpg" alt="" width="1920" height="800"
+        fetchpriority="high" />
+      <img class="hero-slide" src="assets/boicanhch2.jpg" alt="" width="1920" height="800" />
+    </div>
+    <div class="hero-inner">
+      <h1>KHÔNG GIAN SỐNG TRỌN VẸN</h1>
+      <p class="sub">
+        — Gạch men, Sơn nước &amp; Thiết bị vệ sinh cao cấp
+      </p>
+      <a class="btn btn-primary" href="list_products.html">KHÁM PHÁ NGAY</a>
+    </div>
+  </section>
+
+  <!-- Nội dung giới thiệu: chỉnh sửa trực tiếp khối #gioi-thieu khi có bản chính thức -->
+  <section class="intro-section alt" id="gioi-thieu" aria-labelledby="intro-heading">
+    <div class="container intro-grid">
+      <div class="intro-text">
+        <h2 id="intro-heading" class="intro-heading">Về Nội Ngoại Thất Hiệu Hải Phát</h2>
+        <p class="intro-lead">
+          Chúng tôi cung cấp <strong>gạch men</strong>, <strong>sơn nước</strong> và
+          <strong>thiết bị vệ sinh</strong> phục vụ thi công nội — ngoại thất cho nhà ở, văn phòng
+          và công trình tại phường Bắc Gia Nghĩa, tỉnh Lâm Đồng và khu vực lân cận.
         </p>
-        <a class="btn btn-primary" href="list_products.html">KHÁM PHÁ NGAY</a>
+        <a class="btn btn-primary" href="list_products.html">Khám phá sản phẩm</a>
       </div>
-    </section>
+      <figure class="intro-media">
+        <img src="assets/list_prods/boncau1.jpg" alt="Showroom thiết bị vệ sinh" width="900" height="675" />
+      </figure>
+    </div>
+  </section>
 
-    <!-- Nội dung giới thiệu: chỉnh sửa trực tiếp khối #gioi-thieu khi có bản chính thức -->
-    <section class="intro-section alt" id="gioi-thieu" aria-labelledby="intro-heading">
-      <div class="container intro-grid">
-        <div class="intro-text">
-          <h2 id="intro-heading" class="intro-heading">Về Nội Ngoại Thất Hiệu Hải Phát</h2>
-          <p class="intro-lead">
-            Chúng tôi chuyên cung cấp <strong>gạch men</strong>, <strong>sơn nước</strong> và
-            <strong>thiết bị vệ sinh</strong> phục vụ thi công nội — ngoại thất cho nhà ở, văn phòng
-            và công trình tại Hải Phòng và khu vực lân cận.
-          </p>
-          <p class="intro-body">
-            Với phương châm chọn lọc sản phẩm rõ nguồn gốc, minh bạch báo giá và đồng hành tư vấn màu
-            sắc — mẫu gạch phù hợp từng không gian, Hiệu Hải Phát mong muốn giúp khách hàng an tâm
-            khi đầu tư cho ngôi nhà của mình.
-          </p>
-          <ul class="intro-highlights">
-            <li>
-              <span class="intro-hl-title">Tư vấn &amp; báo giá</span>
-              <span class="intro-hl-desc">Hỗ trợ chọn mẫu theo ngân sách và phong cách thiết kế.</span>
-            </li>
-            <li>
-              <span class="intro-hl-title">Đa dạng mẫu mã</span>
-              <span class="intro-hl-desc">Gạch, sơn, thiết bị vệ sinh nhiều thương hiệu, cập nhật xu hướng.</span>
-            </li>
-            <li>
-              <span class="intro-hl-title">Đồng hành công trình</span>
-              <span class="intro-hl-desc">Phối hợp đơn hàng — giao nhận linh hoạt theo tiến độ thi công.</span>
-            </li>
-          </ul>
-          <a class="btn btn-primary" href="list_products.html">Khám phá sản phẩm</a>
+  <section id="danh-muc" aria-labelledby="danh-muc-heading">
+    <div class="container">
+      <h2 id="danh-muc-heading" class="section-title">Danh mục sản phẩm</h2>
+      <p class="section-lead">
+        Lựa chọn theo nhu cầu thi công — gạch men, sơn nước và thiết bị vệ sinh.
+      </p>
+      <div class="cards-3">
+        <article class="cat-card">
+          <img class="thumb" src="assets/list_prods/gachmen-porcelain-v91133-800x800.jpg" alt="Gạch men" width="800"
+            height="600" />
+          <div class="body">
+            <h3>Gạch men</h3>
+            <p>Đa dạng mẫu mã, bền đẹp</p>
+            <a class="btn btn-primary" href="list_products.html?cat=gach">Xem bộ sưu tập</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img class="thumb" src="assets/list_prods/sonnuoc.png" alt="Sơn và cọ" width="800" height="600" />
+          <div class="body">
+            <h3>Sơn nước</h3>
+            <p>Sắc màu tươi mới, chống thấm</p>
+            <a class="btn btn-primary" href="list_products.html?cat=son">Chọn màu sơn</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img class="thumb" src="assets/list_prods/boncau1.jpg" alt="Toilet - thiết bị vệ sinh" width="800"
+            height="600" />
+          <div class="body">
+            <h3>Thiết bị vệ sinh</h3>
+            <p>Tiện nghi hiện đại, sang trọng</p>
+            <a class="btn btn-primary" href="list_products.html?cat=vesinh">Tìm hiểu thêm</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="san-pham-gach-men" aria-labelledby="home-prod-heading">
+    <div class="container">
+      <h2 id="home-prod-heading" class="section-title">Sản phẩm gạch men</h2>
+      <p id="home-product-status" class="section-lead" style="margin-top: -1rem">
+        Đang tải…
+      </p>
+      <div class="product-grid" id="home-product-grid"></div>
+      <nav class="pager pager--after-grid" id="home-gach-pager-bottom" aria-label="Phân trang sản phẩm gạch men"></nav>
+      <p class="home-more">
+        <a href="list_products.html?cat=gach">Xem tất cả gạch men</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="san-pham-thiet-bi-vesinh" aria-labelledby="home-vesinh-heading">
+    <div class="container">
+      <h2 id="home-vesinh-heading" class="section-title">Thiết bị vệ sinh</h2>
+      <p id="home-vesinh-status" class="section-lead" style="margin-top: -1rem">
+        Đang tải…
+      </p>
+      <div class="product-grid" id="home-vesinh-grid"></div>
+      <nav class="pager pager--after-grid" id="home-vesinh-pager" aria-label="Phân trang thiết bị vệ sinh"></nav>
+      <p class="home-more">
+        <a href="list_products.html?cat=vesinh">Xem tất cả thiết bị vệ sinh</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="alt" id="hinh-anh-thuc-te">
+    <div class="container">
+      <h2 class="section-title">Hình ảnh thực tế</h2>
+      <div class="gallery-grid">
+        <div class="gallery-large">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80" alt="Phòng khách hiện đại"
+            width="900" height="1200" />
         </div>
-        <figure class="intro-media">
-          <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80"
-            alt="Không gian nội thất hiện đại"
-            width="900"
-            height="675"
-          />
-        </figure>
+        <div class="gallery-small">
+          <a href="list_products.html">
+            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&q=80" alt="Phòng tắm" width="500"
+              height="500" />
+          </a>
+          <a href="list_products.html">
+            <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=500&q=80" alt="Hành lang"
+              width="500" height="500" />
+          </a>
+          <a href="list_products.html">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80" alt="Phòng ngủ"
+              width="500" height="500" />
+          </a>
+          <a href="list_products.html">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&q=80" alt="Nội thất tổng thể"
+              width="500" height="500" />
+          </a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</p>
+        <p>Đồng hành cùng không gian sống của gia đình bạn.</p>
+        <p><strong>Địa chỉ:</strong> 161 Tôn Đức Thắng (đường 36m), phường Bắc Gia Nghĩa, tỉnh Lâm Đồng</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-brand">Danh mục</p>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="list_products.html?cat=son">Sơn nước</a></li>
+          <li><a href="list_products.html?cat=vesinh">Thiết bị vệ sinh</a></li>
+          <li><a href="list_products.html?cat=gach">Gạch men</a></li>
+          <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" id="lien-he">
+        <p class="footer-brand">Liên hệ</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:tuan.dungck@gmail.com">tuan.dungck@gmail.com</a>
+        </p>
+        <p>
+          <a href="list_products.html">Xem sản phẩm tại cửa hàng</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
       <div class="container">
-        <div class="cards-3">
-          <article class="cat-card">
-            <img
-              class="thumb"
-              src="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=800&q=80"
-              alt="Gạch men trưng bày"
-              width="800"
-              height="600"
-            />
-            <div class="body">
-              <h3>Gạch men</h3>
-              <p>Đa dạng mẫu mã, bền đẹp</p>
-              <a class="btn btn-primary" href="list_products.html?cat=gach"
-                >Xem bộ sưu tập</a
-              >
-            </div>
-          </article>
-          <article class="cat-card">
-            <img
-              class="thumb"
-              src="https://images.unsplash.com/photo-1589939705389-0e8f2a6e0a2b?w=800&q=80"
-              alt="Sơn và cọ"
-              width="800"
-              height="600"
-            />
-            <div class="body">
-              <h3>Sơn nước</h3>
-              <p>Sắc màu tươi mới, chống thấm</p>
-              <a class="btn btn-primary" href="list_products.html?cat=son"
-                >Chọn màu sơn</a
-              >
-            </div>
-          </article>
-          <article class="cat-card">
-            <img
-              class="thumb"
-              src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
-              alt="Thiết bị phòng tắm"
-              width="800"
-              height="600"
-            />
-            <div class="body">
-              <h3>Thiết bị vệ sinh</h3>
-              <p>Tiện nghi hiện đại, sang trọng</p>
-              <a class="btn btn-primary" href="list_products.html?cat=vesinh"
-                >Tìm hiểu thêm</a
-              >
-            </div>
-          </article>
-        </div>
+        © 2026 Nội Ngoại Thất Hiệu Hải Phát. Bảo lưu mọi quyền.
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <section class="alt" id="hinh-anh-thuc-te">
-      <div class="container">
-        <h2 class="section-title">Hình ảnh thực tế</h2>
-        <div class="gallery-grid">
-          <div class="gallery-large">
-            <img
-              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80"
-              alt="Phòng khách hiện đại"
-              width="900"
-              height="1200"
-            />
-          </div>
-          <div class="gallery-small">
-            <a href="list_products.html">
-              <img
-                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&q=80"
-                alt="Phòng tắm"
-                width="500"
-                height="500"
-              />
-            </a>
-            <a href="list_products.html">
-              <img
-                src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=500&q=80"
-                alt="Hành lang"
-                width="500"
-                height="500"
-              />
-            </a>
-            <a href="list_products.html">
-              <img
-                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80"
-                alt="Phòng ngủ"
-                width="500"
-                height="500"
-              />
-            </a>
-            <a href="list_products.html">
-              <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&q=80"
-                alt="Nội thất tổng thể"
-                width="500"
-                height="500"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <script>
+    // Hamburger toggle
+    (function () {
+      var ham = document.querySelector(".hamburger");
+      var nav = document.querySelector(".nav-main");
+      if (!ham || !nav) return;
+      ham.addEventListener("click", function () {
+        var isOpen = nav.classList.toggle("is-open");
+        ham.setAttribute("aria-expanded", isOpen);
+      });
+    })();
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-col">
-          <p class="footer-brand">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</p>
-          <p>Đồng hành cùng không gian sống của gia đình bạn.</p>
-          <p><strong>Điện thoại:</strong> 033 123 4567</p>
-          <p><strong>Địa chỉ:</strong> Lê Lợi, Hải Phòng</p>
-          <p>
-            <strong>Website:</strong>
-            <a href="index.html">noithathaiphong.vn</a>
-          </p>
-          <div class="social" aria-label="Mạng xã hội">
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Zalo">Zalo</a>
-            <a href="#" aria-label="Instagram">IG</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <p class="footer-brand">Danh mục</p>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="list_products.html?cat=son">Sơn nước</a></li>
-            <li><a href="list_products.html?cat=vesinh">Thiết bị vệ sinh</a></li>
-            <li><a href="list_products.html?cat=gach">Gạch men</a></li>
-            <li><a href="#lien-he">Liên hệ</a></li>
-          </ul>
-        </div>
-        <div class="footer-col" id="lien-he">
-          <p class="footer-brand">Liên hệ</p>
-          <p><strong>Email:</strong> info@noithathaiphong.vn</p>
-          <p>
-            <a href="list_products.html">Xem sản phẩm tại cửa hàng</a>
-          </p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          © 2026 Nội Ngoại Thất Hiệu Hải Phát. Bảo lưu mọi quyền.
-        </div>
-      </div>
-    </footer>
-  </body>
+    // Hero slide
+    (function () {
+      var slides = document.querySelectorAll(".hero-slide");
+      if (slides.length < 2) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+        return;
+      var i = 0;
+      setInterval(function () {
+        slides[i].classList.remove("is-active");
+        i = (i + 1) % slides.length;
+        slides[i].classList.add("is-active");
+      }, 6000);
+    })();
+  </script>
+  <script src="js/catalog.js"></script>
+  <script>
+    (function () {
+      var PER_PAGE = 4;
+      var gridGach = document.getElementById("home-product-grid");
+      var stGach = document.getElementById("home-product-status");
+      var pagerGach = document.getElementById("home-gach-pager-bottom");
+      var gridVe = document.getElementById("home-vesinh-grid");
+      var stVe = document.getElementById("home-vesinh-status");
+      var pagerVe = document.getElementById("home-vesinh-pager");
+      var gachCatalog = [];
+      var vesinhCatalog = [];
+
+      function pathBase() {
+        return window.location.pathname || "";
+      }
+
+      function pushParam(key, pg) {
+        var p = new URLSearchParams(window.location.search);
+        if (pg <= 1) p.delete(key);
+        else p.set(key, String(pg));
+        var s = p.toString();
+        history.pushState({}, "", pathBase() + (s ? "?" + s : ""));
+        refreshHomeLists();
+      }
+
+      function replaceParam(key, pg) {
+        var p = new URLSearchParams(window.location.search);
+        if (pg <= 1) p.delete(key);
+        else p.set(key, String(pg));
+        var s = p.toString();
+        history.replaceState({}, "", pathBase() + (s ? "?" + s : ""));
+      }
+
+      function getGachPage() {
+        var n = parseInt(
+          new URLSearchParams(window.location.search).get("page"),
+          10
+        );
+        return n >= 1 ? n : 1;
+      }
+
+      function getVesinhPage() {
+        var n = parseInt(
+          new URLSearchParams(window.location.search).get("vpage"),
+          10
+        );
+        return n >= 1 ? n : 1;
+      }
+
+      function mountPager(el, page, totalPages, paramKey) {
+        if (!el) return;
+        el.innerHTML = "";
+        if (totalPages <= 1) return;
+
+        function go(pg) {
+          pushParam(paramKey, pg);
+        }
+
+        if (page > 1) {
+          var prev = document.createElement("button");
+          prev.type = "button";
+          prev.className = "pager-link pager-prev";
+          prev.textContent = "Trước";
+          prev.addEventListener("click", function () {
+            go(page - 1);
+          });
+          el.appendChild(prev);
+        }
+        for (var i = 1; i <= totalPages; i++) {
+          if (i === page) {
+            var cur = document.createElement("span");
+            cur.className = "pager-link is-current";
+            cur.setAttribute("aria-current", "page");
+            cur.textContent = String(i);
+            el.appendChild(cur);
+          } else {
+            var b = document.createElement("button");
+            b.type = "button";
+            b.className = "pager-link";
+            b.textContent = String(i);
+            (function (pg) {
+              b.addEventListener("click", function () {
+                go(pg);
+              });
+            })(i);
+            el.appendChild(b);
+          }
+        }
+        if (page < totalPages) {
+          var next = document.createElement("button");
+          next.type = "button";
+          next.className = "pager-link pager-next";
+          next.textContent = "Sau";
+          next.addEventListener("click", function () {
+            go(page + 1);
+          });
+          el.appendChild(next);
+        }
+      }
+
+      function renderGach() {
+        if (!gridGach) return;
+        var raw = getGachPage();
+        var totalPages = Math.max(
+          1,
+          Math.ceil(gachCatalog.length / PER_PAGE)
+        );
+        var page = raw > totalPages ? totalPages : raw;
+        if (page < 1) page = 1;
+        if (gachCatalog.length && raw !== page) {
+          replaceParam("page", page);
+        }
+        var start = (page - 1) * PER_PAGE;
+        var slice = gachCatalog.slice(start, start + PER_PAGE);
+        gridGach.innerHTML = "";
+        slice.forEach(function (p) {
+          gridGach.appendChild(NTShop.buildProductCard(p));
+        });
+        mountPager(pagerGach, page, totalPages, "page");
+      }
+
+      function renderVesinh() {
+        if (!gridVe) return;
+        var raw = getVesinhPage();
+        var totalPages = Math.max(
+          1,
+          Math.ceil(vesinhCatalog.length / PER_PAGE)
+        );
+        var page = raw > totalPages ? totalPages : raw;
+        if (page < 1) page = 1;
+        if (vesinhCatalog.length && raw !== page) {
+          replaceParam("vpage", page);
+        }
+        var start = (page - 1) * PER_PAGE;
+        var slice = vesinhCatalog.slice(start, start + PER_PAGE);
+        gridVe.innerHTML = "";
+        slice.forEach(function (p) {
+          gridVe.appendChild(NTShop.buildProductCard(p));
+        });
+        mountPager(pagerVe, page, totalPages, "vpage");
+      }
+
+      function refreshHomeLists() {
+        renderGach();
+        renderVesinh();
+      }
+
+      window.addEventListener("popstate", refreshHomeLists);
+
+      NTShop.fetchCatalog()
+        .then(function (data) {
+          var all = data.products || [];
+          gachCatalog = all.filter(function (p) {
+            return p.category === "gach";
+          });
+          vesinhCatalog = all.filter(function (p) {
+            return p.category === "vesinh";
+          });
+          if (stGach) {
+            if (!gachCatalog.length)
+              stGach.textContent = "Chưa có sản phẩm gạch men.";
+            else stGach.remove();
+          }
+          if (stVe) {
+            if (!vesinhCatalog.length)
+              stVe.textContent = "Chưa có thiết bị vệ sinh trong danh mục.";
+            else stVe.remove();
+          }
+          refreshHomeLists();
+        })
+        .catch(function () {
+          if (stGach) {
+            stGach.textContent =
+              "Không tải được json/prods.json (cần mở site qua máy chủ tĩnh).";
+          }
+          if (stVe) stVe.textContent = stGach ? stGach.textContent : "";
+        });
+    })();
+  </script>
+</body>
+
 </html>

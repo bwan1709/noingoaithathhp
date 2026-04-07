@@ -1,0 +1,146 @@
+{
+  "products": [
+    {
+      "id": "gachmen-e81901",
+      "category": "gach",
+      "title": "Gạch men E81901",
+      "price": "Liên hệ báo giá",
+      "desc": "Mẫu gạch men E81901 — phù hợp lát nền và ốp theo bối cảnh thi công. Vui lòng xem ảnh mặt gạch và ảnh bối cảnh để cảm nhận hiệu ứng không gian.",
+      "specs": [
+        "Mã sản phẩm: E81901",
+        "Ứng dụng: theo tư vấn kỹ thuật & catalogue",
+        "Ảnh trái: mặt gạch — Ảnh phải: bối cảnh thi công mẫu"
+      ],
+      "image": "assets/list_prods/gachmen-e81901.jpg",
+      "imageBoiCanh": "assets/list_prods/gachmen-e81901-boi-canh.jpg"
+    },
+    {
+      "id": "gachmen-porcelain-v91133-800x800",
+      "category": "gach",
+      "title": "Gạch men Porcelain V91133 800x800",
+      "price": "Liên hệ báo giá",
+      "desc": "Gạch Porcelain mã V91133, kích thước viên 800x800 mm. Men bền, phù hợp nhiều phong cách nội thất.",
+      "specs": [
+        "Kích thước viên: 800 x 800 mm",
+        "Dòng: Porcelain — mã V91133",
+        "Ảnh trái: mặt gạch — Ảnh phải: bối cảnh thi công mẫu"
+      ],
+      "image": "assets/list_prods/gachmen-porcelain-v91133-800x800.jpg",
+      "imageBoiCanh": "assets/list_prods/gachmen-porcelain-v91133-800x800-boi-canh.jpg"
+    },
+    {
+      "id": "gachmen-porcelain-v91134-800x800",
+      "category": "gach",
+      "title": "Gạch men Porcelain V91134 800x800",
+      "price": "Liên hệ báo giá",
+      "desc": "Gạch Porcelain mã V91134, kích thước viên 800x800 mm.",
+      "specs": [
+        "Kích thước viên: 800 x 800 mm",
+        "Dòng: Porcelain — mã V91134",
+        "Ảnh trái: mặt gạch — Ảnh phải: bối cảnh thi công mẫu"
+      ],
+      "image": "assets/list_prods/gachmen-porcelain-v91134-800x800.jpg",
+      "imageBoiCanh": "assets/list_prods/gachmen-porcelain-v91134-800x800-boi-canh.jpg"
+    },
+    {
+      "id": "gachmen-porcelain-v91136-800x800",
+      "category": "gach",
+      "title": "Gạch men Porcelain V91136 800x800",
+      "price": "Liên hệ báo giá",
+      "desc": "Gạch Porcelain mã V91136, kích thước viên 800x800 mm.",
+      "specs": [
+        "Kích thước viên: 800 x 800 mm",
+        "Dòng: Porcelain — mã V91136",
+        "Ảnh trái: mặt gạch — Ảnh phải: bối cảnh thi công mẫu"
+      ],
+      "image": "assets/list_prods/gachmen-porcelain-v91136-800x800.jpg",
+      "imageBoiCanh": "assets/list_prods/gachmen-porcelain-v91136-800x800-boi-canh.jpg"
+    },
+    {
+      "id": "gachmen-porcelain-v96632-800x800",
+      "category": "gach",
+      "title": "Gạch men Porcelain V96632 800x800",
+      "price": "Liên hệ báo giá",
+      "desc": "Gạch Porcelain mã V96632, kích thước viên 800x800 mm.",
+      "specs": [
+        "Kích thước viên: 800 x 800 mm",
+        "Dòng: Porcelain — mã V96632",
+        "Ảnh trái: mặt gạch — Ảnh phải: bối cảnh thi công mẫu"
+      ],
+      "image": "assets/list_prods/gachmen-porcelain-v96632-800x800.jpg",
+      "imageBoiCanh": "assets/list_prods/gachmen-porcelain-v96632-800x800-boi-canh.jpg"
+    },
+    {
+      "id": "boncau-1",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 1",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau1.jpg"
+    },
+    {
+      "id": "boncau-2",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 2",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau2.jpg"
+    },
+    {
+      "id": "boncau-3",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 3",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau3.jpg"
+    },
+    {
+      "id": "boncau-4",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 4",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau4.jpg"
+    },
+    {
+      "id": "boncau-5",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 5",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau5.jpg"
+    },
+    {
+      "id": "boncau-6",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 6",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau6.jpg"
+    },
+    {
+      "id": "boncau-7",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 7",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau7.jpg"
+    },
+    {
+      "id": "boncau-8",
+      "category": "vesinh",
+      "title": "Toilet — mẫu 8",
+      "price": "Liên hệ báo giá",
+      "desc": "Thiết bị vệ sinh — Toilet (ảnh tại cửa hàng).",
+      "specs": ["Danh mục: Toilet / thiết bị vệ sinh"],
+      "image": "assets/list_prods/boncau8.jpg"
+    }
+  ]
+}
