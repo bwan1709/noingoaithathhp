@@ -66,13 +66,27 @@
         <nav class="breadcrumb" aria-label="breadcrumbs">
           <a href="index.html">Trang chủ</a> <span class="divider">/</span> <span class="current">Cửa hàng</span>
         </nav>
-        
+
         <div class="view-switcher" id="view-switcher">
           <button class="btn-view is-active" data-view="grid" aria-label="Lưới">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
           </button>
           <button class="btn-view" data-view="table" aria-label="Danh sách">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
           </button>
         </div>
       </div>
@@ -123,50 +137,7 @@
       var grid = document.getElementById("product-grid");
       var statusEl = document.getElementById("product-grid-status");
 
-      var STATIC_OTHER = [
-        {
-          id: "sn01",
-          category: "son",
-          title: "Sơn Nội Thất Bóng",
-          price: "Liên hệ",
-          image: "assets/list_prods/sonnuoc1.jpg",
-        },
-        {
-          id: "sn02",
-          category: "son",
-          title: "Sơn Ngoại Thất Cao Cấp",
-          price: "Liên hệ",
-          image: "assets/list_prods/sonnuoc2.jpg",
-        },
-        {
-          id: "sn03",
-          category: "son",
-          title: "Sơn Nước Kháng Khuẩn",
-          price: "Liên hệ",
-          image: "assets/list_prods/sonnuoc3.jpg",
-        },
-        {
-          id: "sn04",
-          category: "son",
-          title: "Sơn Lót Kháng Kiềm",
-          price: "Liên hệ",
-          image: "assets/list_prods/sonnuoc4.jpg",
-        },
-        {
-          id: "tb01",
-          category: "vesinh",
-          title: "Bộ sen tắm nhiệt độ — inox 304",
-          price: "4.290.000đ",
-          image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-        },
-        {
-          id: "tb02",
-          category: "vesinh",
-          title: "Lavabo đặt bàn sứ — 55cm",
-          price: "2.650.000đ",
-          image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-        },
-      ];
+      var STATIC_OTHER = [];
 
       function applyFilter(cat) {
         var params = new URLSearchParams(window.location.search);
@@ -192,7 +163,7 @@
           e.preventDefault();
           var filter = this.getAttribute("data-filter");
           var c = filter === "all" ? null : filter;
-          
+
           var url = new URL(window.location);
           if (c) {
             url.searchParams.set("cat", c);
@@ -200,7 +171,7 @@
             url.searchParams.delete("cat");
           }
           window.history.pushState({}, "", url);
-          
+
           applyFilter(c);
         });
       });
@@ -215,16 +186,10 @@
             (data.products || []).forEach(function (p) {
               grid.appendChild(NTShop.buildProductCard(p));
             });
-            STATIC_OTHER.forEach(function (p) {
-              grid.appendChild(NTShop.buildProductCard(p));
-            });
             if (statusEl) statusEl.remove();
             applyFilter();
           })
           .catch(function () {
-            STATIC_OTHER.forEach(function (p) {
-              grid.appendChild(NTShop.buildProductCard(p));
-            });
             if (statusEl) {
               statusEl.textContent =
                 "Không tải được json/prods.json (cần mở site qua máy chủ tĩnh). Đang hiển thị sản phẩm mẫu sơn & TBVS.";
