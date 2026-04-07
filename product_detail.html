@@ -5,10 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chi tiết sản phẩm — Nội Ngoại Thất Hiệu Hải Phát</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <meta name="description"
+    content="Xem chi tiết sản phẩm, catalogue và bối cảnh mẫu cực đẹp tại đại lý Nội Ngoại Thất Hiệu Hải Phát." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chi tiết sản phẩm — Nội Ngoại Thất Hiệu Hải Phát" />
+  <meta property="og:description"
+    content="Xem chi tiết sản phẩm, catalogue và bối cảnh mẫu cực đẹp tại đại lý Nội Ngoại Thất Hiệu Hải Phát." />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -16,7 +26,18 @@
 <body>
   <header class="site-header">
     <div class="container inner">
-      <a class="logo" href="index.html">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</a>
+      <a class="logo" href="index.html"
+        style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+        <img src="assets/logo.png" alt="Nội Ngoại Thất Hiệu Hải Phát" class="brand-logo" />
+        <span
+          style="font-size: 0.7rem; color: var(--accent); letter-spacing: 0.05em; font-weight: 800; text-transform: uppercase;">Nội
+          Ngoại Thất Hiệu Hải Phát</span>
+      </a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="nav-main" aria-label="Menu chính">
         <a href="index.html">Trang chủ</a>
         <a href="list_products.html?cat=son">Sơn nước</a>
@@ -27,29 +48,87 @@
     </div>
   </header>
 
-  <div class="page-hero">
+  <div class="page-hero"
+    style="padding: 1.5rem 0; text-align: left; background: transparent; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 3rem;">
     <div class="container">
-      <p style="margin: 0">
-        <a href="list_products.html" style="color: var(--text-muted)">← Quay lại cửa hàng</a>
-      </p>
+      <nav aria-label="Breadcrumb" class="breadcrumb" id="detail-breadcrumb">
+        <ol
+          style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.95rem; align-items: center;">
+          <li><a href="index.html" style="color: var(--text-muted); text-decoration: none;">Trang chủ</a></li>
+          <li style="color: rgba(255,255,255,0.2);">/</li>
+          <li><a href="list_products.html" id="bc-category" style="color: var(--text-muted); text-decoration: none;">Cửa
+              hàng</a></li>
+          <li style="color: rgba(255,255,255,0.2);">/</li>
+          <li aria-current="page" id="bc-title" style="color: var(--accent); font-weight: 600;">Chi tiết sản phẩm</li>
+        </ol>
+      </nav>
     </div>
   </div>
 
   <div class="container detail-wrap">
     <div class="detail-grid">
-      <div class="detail-pair" id="detail-pair">
-        <figure>
-          <div class="pair-frame">
-            <img id="detail-img-product" src="" alt="" width="800" height="800" />
-          </div>
-          <figcaption id="detail-cap-product">Ảnh sản phẩm</figcaption>
-        </figure>
-        <figure class="detail-figure-scene">
-          <div class="pair-frame">
-            <img id="detail-img-scene" src="" alt="" width="800" height="800" />
-          </div>
-          <figcaption id="detail-cap-scene">Ảnh bối cảnh</figcaption>
-        </figure>
+      <style>
+        .slider-container {
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          gap: 1rem;
+          scrollbar-width: none;
+        }
+
+        .slider-container::-webkit-scrollbar {
+          display: none;
+        }
+
+        .slider-container figure {
+          flex: 0 0 100%;
+          scroll-snap-align: center;
+          margin: 0;
+        }
+
+        .slider-dots {
+          display: flex;
+          justify-content: center;
+          gap: 0.75rem;
+          margin-top: 1.5rem;
+        }
+
+        .slider-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.2);
+          border: none;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .slider-dot.is-active {
+          background: var(--accent);
+        }
+      </style>
+      <div class="detail-gallery">
+        <div class="slider-container" id="detail-slider">
+          <figure id="figure-product">
+            <div class="pair-frame">
+              <img id="detail-img-product" src="" alt="" width="800" height="800" />
+            </div>
+            <figcaption id="detail-cap-product">Ảnh sản phẩm</figcaption>
+          </figure>
+          <figure id="figure-scene" style="display: none;">
+            <div class="pair-frame">
+              <img id="detail-img-scene" src="" alt="" width="800" height="800" />
+            </div>
+            <figcaption id="detail-cap-scene">Ảnh bối cảnh</figcaption>
+          </figure>
+        </div>
+        <div class="slider-dots" id="detail-slider-dots" style="display: none;">
+          <button class="slider-dot is-active" aria-label="Slide 1"
+            onclick="document.getElementById('figure-product').scrollIntoView({behavior: 'smooth'})"></button>
+          <button class="slider-dot" aria-label="Slide 2"
+            onclick="document.getElementById('figure-scene').scrollIntoView({behavior: 'smooth'})"></button>
+        </div>
       </div>
       <div class="detail-info">
         <h1 id="detail-title">Sản phẩm</h1>
@@ -150,11 +229,27 @@
     }
 
     function applyPairImages(p) {
-      var pair = document.getElementById("detail-pair");
       var imgP = document.getElementById("detail-img-product");
       var imgS = document.getElementById("detail-img-scene");
       var capP = document.getElementById("detail-cap-product");
       var capS = document.getElementById("detail-cap-scene");
+      var figScene = document.getElementById("figure-scene");
+      var dots = document.getElementById("detail-slider-dots");
+      var dotBtns = document.querySelectorAll(".slider-dot");
+
+      // Scroll spy for dot active state
+      var slider = document.getElementById("detail-slider");
+      slider.addEventListener("scroll", function () {
+        var w = slider.clientWidth;
+        var p = slider.scrollLeft;
+        if (p < w / 2) {
+          dotBtns[0].classList.add("is-active");
+          dotBtns[1].classList.remove("is-active");
+        } else {
+          dotBtns[0].classList.remove("is-active");
+          dotBtns[1].classList.add("is-active");
+        }
+      });
 
       if (p.image && p.imageBoiCanh) {
         imgP.src = p.image;
@@ -163,7 +258,8 @@
         imgS.alt = p.title + " — bối cảnh";
         capP.textContent = "Ảnh sản phẩm (mặt gạch)";
         capS.textContent = "Ảnh bối cảnh thi công";
-        pair.classList.remove("is-single");
+        figScene.style.display = "block";
+        dots.style.display = "flex";
         return;
       }
 
@@ -174,19 +270,22 @@
         imgS.alt = p.title;
         capP.textContent = "Ảnh sản phẩm";
         capS.textContent = "Ảnh minh họa";
-        pair.classList.remove("is-single");
+        figScene.style.display = "block";
+        dots.style.display = "flex";
         return;
       }
 
       if (p.images && p.images.length === 1) {
         imgP.src = p.images[0];
         imgP.alt = p.title;
-        pair.classList.add("is-single");
+        figScene.style.display = "none";
+        dots.style.display = "none";
         return;
       }
 
       imgP.removeAttribute("src");
-      pair.classList.add("is-single");
+      figScene.style.display = "none";
+      dots.style.display = "none";
     }
 
     function renderDetail() {
@@ -203,6 +302,16 @@
       document.getElementById("detail-title").textContent = p.title;
       document.getElementById("detail-price").textContent = p.price || "Liên hệ";
       document.getElementById("detail-desc").textContent = p.desc || "";
+
+      // Update Breadcrumbs
+      var catName = "Cửa hàng";
+      if (p.category === "gach") catName = "Gạch men";
+      else if (p.category === "son") catName = "Sơn nước";
+      else if (p.category === "vesinh") catName = "Thiết bị vệ sinh";
+
+      document.getElementById("bc-category").textContent = catName;
+      document.getElementById("bc-category").href = "list_products.html?cat=" + p.category;
+      document.getElementById("bc-title").textContent = p.title;
 
       applyPairImages(p);
 

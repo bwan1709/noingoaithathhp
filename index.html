@@ -5,10 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nội Ngoại Thất Hiệu Hải Phát — Gạch men, Sơn, Thiết bị vệ sinh</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <meta name="description"
+    content="Nội Ngoại Thất Hiệu Hải Phát chuyên cung cấp Gạch men, Sơn nước và Thiết bị vệ sinh cao cấp cho không gian sống trọn vẹn tại Đắk Nông." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nội Ngoại Thất Hiệu Hải Phát — Gạch men, Sơn, Thiết bị vệ sinh" />
+  <meta property="og:description"
+    content="Nội Ngoại Thất Hiệu Hải Phát chuyên cung cấp Gạch men, Sơn nước và Thiết bị vệ sinh cao cấp cho không gian sống trọn vẹn tại Đắk Nông." />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -16,7 +26,13 @@
 <body>
   <header class="site-header">
     <div class="container inner">
-      <a class="logo" href="index.html">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</a>
+      <a class="logo" href="index.html"
+        style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+        <img src="assets/logo.png" alt="Nội Ngoại Thất Hiệu Hải Phát" class="brand-logo" />
+        <span
+          style="font-size: 0.7rem; color: var(--accent); letter-spacing: 0.05em; font-weight: 800; text-transform: uppercase;">Nội
+          Ngoại Thất Hiệu Hải Phát</span>
+      </a>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -37,120 +53,93 @@
         fetchpriority="high" />
       <img class="hero-slide" src="assets/boicanhch2.jpg" alt="" width="1920" height="800" />
     </div>
-    <div class="hero-inner">
+    <div class="hero-inner animate-slide-up" data-animate>
+      <div class="logo-overlay">
+      </div>
       <h1>KHÔNG GIAN SỐNG TRỌN VẸN</h1>
       <p class="sub">
-        — Gạch men, Sơn nước &amp; Thiết bị vệ sinh cao cấp
+        — Gạch men, Sơn nước &amp; Thiết bị vệ sinh cao cấp —
       </p>
-      <a class="btn btn-primary" href="list_products.html">KHÁM PHÁ NGAY</a>
-    </div>
-  </section>
-
-  <!-- Nội dung giới thiệu: chỉnh sửa trực tiếp khối #gioi-thieu khi có bản chính thức -->
-  <section class="intro-section alt" id="gioi-thieu" aria-labelledby="intro-heading">
-    <div class="container intro-grid">
-      <div class="intro-text">
-        <h2 id="intro-heading" class="intro-heading">Về Nội Ngoại Thất Hiệu Hải Phát</h2>
-        <p class="intro-lead">
-          Chúng tôi cung cấp <strong>gạch men</strong>, <strong>sơn nước</strong> và
-          <strong>thiết bị vệ sinh</strong> phục vụ thi công nội — ngoại thất cho nhà ở, văn phòng
-          và công trình tại phường Bắc Gia Nghĩa, tỉnh Lâm Đồng và khu vực lân cận.
-        </p>
-        <a class="btn btn-primary" href="list_products.html">Khám phá sản phẩm</a>
+      <div class="promo">
+        MIỄN PHÍ <span class="num">100%</span> TƯ VẤN SẢN PHẨM
       </div>
-      <figure class="intro-media">
-        <img src="assets/gioithieu.jpg" alt="Showroom thiết bị vệ sinh" width="900" height="675" />
-      </figure>
-    </div>
-  </section>
-
-  <section id="danh-muc" aria-labelledby="danh-muc-heading">
-    <div class="container">
-      <h2 id="danh-muc-heading" class="section-title">Danh mục sản phẩm</h2>
-      <p class="section-lead">
-        Lựa chọn theo nhu cầu thi công — gạch men, sơn nước và thiết bị vệ sinh.
-      </p>
-      <div class="cards-3">
-        <article class="cat-card">
-          <img class="thumb" src="assets/list_prods/gachmen-porcelain-v91133-800x800.jpg" alt="Gạch men" width="800"
-            height="600" />
-          <div class="body">
-            <h3>Gạch men</h3>
-            <p>Đa dạng mẫu mã, bền đẹp</p>
-            <a class="btn btn-primary" href="list_products.html?cat=gach">Xem bộ sưu tập</a>
-          </div>
-        </article>
-        <article class="cat-card">
-          <img class="thumb" src="assets/list_prods/sonnuoc.png" alt="Sơn và cọ" width="800" height="600" />
-          <div class="body">
-            <h3>Sơn nước</h3>
-            <p>Sắc màu tươi mới, chống thấm</p>
-            <a class="btn btn-primary" href="list_products.html?cat=son">Chọn màu sơn</a>
-          </div>
-        </article>
-        <article class="cat-card">
-          <img class="thumb" src="assets/list_prods/boncau1.jpg" alt="Toilet - thiết bị vệ sinh" width="800"
-            height="600" />
-          <div class="body">
-            <h3>Thiết bị vệ sinh</h3>
-            <p>Tiện nghi hiện đại, sang trọng</p>
-            <a class="btn btn-primary" href="list_products.html?cat=vesinh">Tìm hiểu thêm</a>
-          </div>
-        </article>
+      <div>
+        <a class="btn btn-primary" href="list_products.html">KHÁM PHÁ NGAY</a>
       </div>
     </div>
   </section>
 
-  <section class="alt" id="san-pham-gach-men" aria-labelledby="home-prod-heading">
-    <div class="container">
-      <h2 id="home-prod-heading" class="section-title">Sản phẩm gạch men</h2>
-      <p id="home-product-status" class="section-lead" style="margin-top: -1rem">
-        Đang tải…
-      </p>
-      <div class="product-grid" id="home-product-grid"></div>
-      <nav class="pager pager--after-grid" id="home-gach-pager-bottom" aria-label="Phân trang sản phẩm gạch men"></nav>
-      <p class="home-more">
-        <a href="list_products.html?cat=gach">Xem tất cả gạch men</a>
-      </p>
+  <!-- Overlapping Category Cards (Thay cho Danh mục sản phẩm) -->
+  <section class="overlap-section" id="danh-muc" aria-labelledby="danh-muc-heading">
+    <div class="container overlap-grid">
+      <div class="overlap-card animate-slide-up" data-animate style="transition-delay: 100ms">
+        <img src="assets/list_prods/gachmen-porcelain-v91133-800x800.jpg" alt="Gạch men" width="80" height="80" />
+        <div class="overlap-card-info">
+          <h3>Gạch men</h3>
+          <p>Đa dạng mẫu mã, bền đẹp với thời gian</p>
+        </div>
+        <div class="number">01</div>
+        <a href="list_products.html?cat=gach" style="position:absolute; inset:0; z-index:2" aria-label="Gạch men"></a>
+      </div>
+      <div class="overlap-card animate-slide-up" data-animate style="transition-delay: 250ms">
+        <img src="assets/list_prods/sonnuoc.png" alt="Sơn nước" width="80" height="80" />
+        <div class="overlap-card-info">
+          <h3>Sơn nước</h3>
+          <p>Sắc màu tươi mới, chống thấm vượt trội</p>
+        </div>
+        <div class="number">02</div>
+        <a href="list_products.html?cat=son" style="position:absolute; inset:0; z-index:2" aria-label="Sơn nước"></a>
+      </div>
+      <div class="overlap-card animate-slide-up" data-animate style="transition-delay: 400ms">
+        <img src="assets/list_prods/boncau1.jpg" alt="Thiết bị vệ sinh" width="80" height="80" />
+        <div class="overlap-card-info">
+          <h3>Thiết bị vệ sinh</h3>
+          <p>Tiện nghi hiện đại, cực kỳ sang trọng</p>
+        </div>
+        <div class="number">03</div>
+        <a href="list_products.html?cat=vesinh" style="position:absolute; inset:0; z-index:2"
+          aria-label="Thiết bị vệ sinh"></a>
+      </div>
     </div>
   </section>
 
-  <section id="san-pham-thiet-bi-vesinh" aria-labelledby="home-vesinh-heading">
-    <div class="container">
-      <h2 id="home-vesinh-heading" class="section-title">Thiết bị vệ sinh</h2>
-      <p id="home-vesinh-status" class="section-lead" style="margin-top: -1rem">
-        Đang tải…
-      </p>
-      <div class="product-grid" id="home-vesinh-grid"></div>
-      <nav class="pager pager--after-grid" id="home-vesinh-pager" aria-label="Phân trang thiết bị vệ sinh"></nav>
-      <p class="home-more">
-        <a href="list_products.html?cat=vesinh">Xem tất cả thiết bị vệ sinh</a>
-      </p>
-    </div>
-  </section>
-
+  <!-- Hình ảnh thực tế (Đưa lên làm điểm nhấn giống Các công trình Salekit đã thực hiện) -->
   <section class="alt" id="hinh-anh-thuc-te">
     <div class="container">
-      <h2 class="section-title">Hình ảnh thực tế</h2>
+      <div class="animate-slide-up" data-animate>
+        <h2 class="section-title">HÌNH ẢNH THỰC TẾ</h2>
+        <div class="section-separator">
+          <svg viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6C8 6 6 1.5 3 1.5C1 1.5 1 4.5 3 4.5C5 4.5 7 10.5 11 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <path d="M21 6C24 6 26 1.5 29 1.5C31 1.5 31 4.5 29 4.5C27 4.5 25 10.5 21 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <rect x="14" y="4" width="4" height="4" transform="rotate(45 16 6)" fill="currentColor" />
+          </svg>
+        </div>
+        <p class="section-lead" style="margin-top: 0">
+          Tham khảo các bối cảnh trang trí nội - ngoại thất tuyệt đẹp cùng thiết bị cao cấp của chúng tôi.
+        </p>
+      </div>
       <div class="gallery-grid">
-        <div class="gallery-large">
+        <div class="gallery-large animate-fade-in" data-animate style="transition-delay: 100ms">
           <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80" alt="Phòng khách hiện đại"
             width="900" height="1200" />
         </div>
         <div class="gallery-small">
-          <a href="list_products.html">
+          <a href="list_products.html" class="animate-fade-in" data-animate style="transition-delay: 200ms">
             <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&q=80" alt="Phòng tắm" width="500"
               height="500" />
           </a>
-          <a href="list_products.html">
+          <a href="list_products.html" class="animate-fade-in" data-animate style="transition-delay: 350ms">
             <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=500&q=80" alt="Hành lang"
               width="500" height="500" />
           </a>
-          <a href="list_products.html">
+          <a href="list_products.html" class="animate-fade-in" data-animate style="transition-delay: 500ms">
             <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80" alt="Phòng ngủ"
               width="500" height="500" />
           </a>
-          <a href="list_products.html">
+          <a href="list_products.html" class="animate-fade-in" data-animate style="transition-delay: 650ms">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&q=80" alt="Nội thất tổng thể"
               width="500" height="500" />
           </a>
@@ -159,14 +148,82 @@
     </div>
   </section>
 
+  <section id="san-pham-gach-men" aria-labelledby="home-prod-heading">
+    <div class="container">
+      <div class="animate-slide-up" data-animate>
+        <h2 id="home-prod-heading" class="section-title">SẢN PHẨM GẠCH MEN</h2>
+        <div class="section-separator">
+          <svg viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6C8 6 6 1.5 3 1.5C1 1.5 1 4.5 3 4.5C5 4.5 7 10.5 11 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <path d="M21 6C24 6 26 1.5 29 1.5C31 1.5 31 4.5 29 4.5C27 4.5 25 10.5 21 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <rect x="14" y="4" width="4" height="4" transform="rotate(45 16 6)" fill="currentColor" />
+          </svg>
+        </div>
+        <p id="home-product-status" class="section-lead" style="margin-top: 0">
+          Đang tải…
+        </p>
+      </div>
+      <div class="product-grid" id="home-product-grid"></div>
+      <nav class="pager pager--after-grid" id="home-gach-pager-bottom" aria-label="Phân trang sản phẩm gạch men"></nav>
+      <p class="home-more animate-slide-up" data-animate>
+        <a href="list_products.html?cat=gach">Xem tất cả gạch men</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="alt" id="san-pham-thiet-bi-vesinh" aria-labelledby="home-vesinh-heading">
+    <div class="container">
+      <div class="animate-slide-up" data-animate>
+        <h2 id="home-vesinh-heading" class="section-title">THIẾT BỊ VỆ SINH</h2>
+        <div class="section-separator">
+          <svg viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6C8 6 6 1.5 3 1.5C1 1.5 1 4.5 3 4.5C5 4.5 7 10.5 11 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <path d="M21 6C24 6 26 1.5 29 1.5C31 1.5 31 4.5 29 4.5C27 4.5 25 10.5 21 10.5" stroke="currentColor"
+              stroke-width="1" />
+            <rect x="14" y="4" width="4" height="4" transform="rotate(45 16 6)" fill="currentColor" />
+          </svg>
+        </div>
+        <p id="home-vesinh-status" class="section-lead" style="margin-top: 0">
+          Đang tải…
+        </p>
+      </div>
+      <div class="product-grid" id="home-vesinh-grid"></div>
+      <nav class="pager pager--after-grid" id="home-vesinh-pager" aria-label="Phân trang thiết bị vệ sinh"></nav>
+      <p class="home-more animate-slide-up" data-animate>
+        <a href="list_products.html?cat=vesinh">Xem tất cả thiết bị vệ sinh</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Giới thiệu (Về phía bottom) -->
+  <section class="intro-section" id="gioi-thieu" aria-labelledby="intro-heading">
+    <div class="container intro-grid">
+      <div class="intro-text animate-slide-up" data-animate style="transition-delay: 100ms">
+        <h2 id="intro-heading" class="intro-heading">VỀ HIỆU HẢI PHÁT</h2>
+        <p class="intro-lead">
+          Chúng tôi cung cấp <strong>gạch men</strong>, <strong>sơn nước</strong> và
+          <strong>thiết bị vệ sinh</strong> phục vụ thi công nội — ngoại thất cho nhà ở, văn phòng
+          và công trình tại phường Bắc Gia Nghĩa, tỉnh Lâm Đồng và khu vực lân cận.
+        </p>
+        <a class="btn btn-primary" href="list_products.html">KHÁM PHÁ SẢN PHẨM</a>
+      </div>
+      <figure class="intro-media animate-fade-in" data-animate style="transition-delay: 300ms">
+        <img src="assets/gioithieu.jpg" alt="Showroom thiết bị vệ sinh" width="900" height="675" />
+      </figure>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-col">
+      <div class="footer-col animate-slide-up" data-animate style="transition-delay: 100ms">
         <p class="footer-brand">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</p>
         <p>Đồng hành cùng không gian sống của gia đình bạn.</p>
         <p><strong>Địa chỉ:</strong> 161 Tôn Đức Thắng (đường 36m), phường Bắc Gia Nghĩa, tỉnh Lâm Đồng</p>
       </div>
-      <div class="footer-col">
+      <div class="footer-col animate-slide-up" data-animate style="transition-delay: 250ms">
         <p class="footer-brand">Danh mục</p>
         <ul>
           <li><a href="index.html">Trang chủ</a></li>
@@ -176,14 +233,14 @@
           <li><a href="#lien-he">Liên hệ</a></li>
         </ul>
       </div>
-      <div class="footer-col" id="lien-he">
+      <div class="footer-col animate-slide-up" data-animate style="transition-delay: 400ms" id="lien-he">
         <p class="footer-brand">Liên hệ</p>
         <p>
           <strong>Email:</strong>
           <a href="mailto:tuan.dungck@gmail.com">tuan.dungck@gmail.com</a>
         </p>
-        <p>
-          <a href="list_products.html">Xem sản phẩm tại cửa hàng</a>
+        <p style="margin-top: 1rem;">
+          <a class="btn btn-primary" href="list_products.html" style="color:#111; padding:0.5rem 1rem">Xem cửa hàng</a>
         </p>
       </div>
     </div>
@@ -195,6 +252,23 @@
   </footer>
 
   <script>
+    // Xử lý intersection observer global
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    (function () {
+      if (!('IntersectionObserver' in window)) return;
+      document.querySelectorAll('[data-animate]').forEach(el => {
+        observer.observe(el);
+      });
+    })();
+
     // Hamburger toggle
     (function () {
       var ham = document.querySelector(".hamburger");
@@ -336,8 +410,13 @@
         var start = (page - 1) * PER_PAGE;
         var slice = gachCatalog.slice(start, start + PER_PAGE);
         gridGach.innerHTML = "";
-        slice.forEach(function (p) {
-          gridGach.appendChild(NTShop.buildProductCard(p));
+        slice.forEach(function (p, index) {
+          let card = NTShop.buildProductCard(p);
+          card.classList.add("animate-slide-up");
+          card.setAttribute("data-animate", "");
+          card.style.transitionDelay = (100 * index) + "ms";
+          observer.observe(card);
+          gridGach.appendChild(card);
         });
         mountPager(pagerGach, page, totalPages, "page");
       }
@@ -357,8 +436,13 @@
         var start = (page - 1) * PER_PAGE;
         var slice = vesinhCatalog.slice(start, start + PER_PAGE);
         gridVe.innerHTML = "";
-        slice.forEach(function (p) {
-          gridVe.appendChild(NTShop.buildProductCard(p));
+        slice.forEach(function (p, index) {
+          let card = NTShop.buildProductCard(p);
+          card.classList.add("animate-slide-up");
+          card.setAttribute("data-animate", "");
+          card.style.transitionDelay = (100 * index) + "ms";
+          observer.observe(card);
+          gridVe.appendChild(card);
         });
         mountPager(pagerVe, page, totalPages, "vpage");
       }

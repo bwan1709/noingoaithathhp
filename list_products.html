@@ -5,10 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cửa hàng — Nội Ngoại Thất Hiệu Hải Phát</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <meta name="description"
+    content="Khám phá ngay bộ sưu tập Gạch men, Sơn nước và Thiết bị vệ sinh đỉnh cao tại cửa hàng Nội Ngoại Thất Hiệu Hải Phát." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cửa hàng — Nội Ngoại Thất Hiệu Hải Phát" />
+  <meta property="og:description"
+    content="Khám phá ngay bộ sưu tập Gạch men, Sơn nước và Thiết bị vệ sinh đỉnh cao tại cửa hàng Nội Ngoại Thất Hiệu Hải Phát." />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -16,7 +26,18 @@
 <body>
   <header class="site-header">
     <div class="container inner">
-      <a class="logo" href="index.html">NỘI NGOẠI THẤT HIỆU HẢI PHÁT</a>
+      <a class="logo" href="index.html"
+        style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+        <img src="assets/logo.png" alt="Nội Ngoại Thất Hiệu Hải Phát" class="brand-logo" />
+        <span
+          style="font-size: 0.7rem; color: var(--accent); letter-spacing: 0.05em; font-weight: 800; text-transform: uppercase;">Nội
+          Ngoại Thất Hiệu Hải Phát</span>
+      </a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="nav-main" aria-label="Menu chính">
         <a href="index.html">Trang chủ</a>
         <a href="list_products.html?cat=son">Sơn nước</a>
