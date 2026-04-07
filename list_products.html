@@ -62,6 +62,21 @@
     </aside>
 
     <div>
+      <div class="shop-header">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <a href="index.html">Trang chủ</a> <span class="divider">/</span> <span class="current">Cửa hàng</span>
+        </nav>
+        
+        <div class="view-switcher" id="view-switcher">
+          <button class="btn-view is-active" data-view="grid" aria-label="Lưới">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          </button>
+          <button class="btn-view" data-view="table" aria-label="Danh sách">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
       <p id="product-grid-status" class="section-lead" style="margin: 0 0 1rem; text-align: left">
         Đang tải sản phẩm…
       </p>
@@ -145,7 +160,7 @@
 
       function applyFilter(cat) {
         var params = new URLSearchParams(window.location.search);
-        var c = cat != null ? cat : params.get("cat");
+        var c = cat !== undefined ? cat : params.get("cat");
         var links = document.querySelectorAll(".filter-box a");
         var valid = { gach: true, son: true, vesinh: true };
         if (c && !valid[c]) c = null;
@@ -153,7 +168,7 @@
         var cards = document.querySelectorAll("#product-grid .product-card");
         cards.forEach(function (card) {
           var ok = showAll || card.dataset.category === c;
-          card.classList.toggle("is-hidden", !ok);
+          card.style.display = ok ? "" : "none";
         });
         links.forEach(function (a) {
           var f = a.getAttribute("data-filter");
@@ -161,6 +176,28 @@
           a.classList.toggle("is-active", active);
         });
       }
+
+      document.querySelectorAll(".filter-box a").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          var filter = this.getAttribute("data-filter");
+          var c = filter === "all" ? null : filter;
+          
+          var url = new URL(window.location);
+          if (c) {
+            url.searchParams.set("cat", c);
+          } else {
+            url.searchParams.delete("cat");
+          }
+          window.history.pushState({}, "", url);
+          
+          applyFilter(c);
+        });
+      });
+
+      window.addEventListener("popstate", function () {
+        applyFilter();
+      });
 
       function fillGrid() {
         NTShop.fetchCatalog()
@@ -187,6 +224,21 @@
       }
 
       fillGrid();
+
+      // View switcher logic
+      var viewBtns = document.querySelectorAll("#view-switcher .btn-view");
+      viewBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          viewBtns.forEach(function (b) { b.classList.remove("is-active"); });
+          this.classList.add("is-active");
+          var view = this.getAttribute("data-view");
+          if (view === "table") {
+            grid.classList.add("is-list-view");
+          } else {
+            grid.classList.remove("is-list-view");
+          }
+        });
+      });
     })();
   </script>
 </body>
