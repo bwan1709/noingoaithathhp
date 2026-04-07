@@ -652,6 +652,28 @@ section.alt {
   top: 5.5rem;
 }
 
+@media (max-width: 768px) {
+  .filter-box {
+    position: static;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .filter-box a {
+    display: inline-block;
+    margin: 0.25rem 0.25rem 0 0;
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border-radius: 999px;
+    font-size: 0.85rem;
+  }
+  
+  .filter-box a.is-active {
+    background: var(--accent);
+    color: var(--white);
+  }
+}
+
 .filter-box h2 {
   margin: 0 0 1rem;
   font-size: 0.85rem;
